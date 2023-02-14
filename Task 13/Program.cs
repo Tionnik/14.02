@@ -1,13 +1,9 @@
 ﻿Console.Clear();
-//Console.WriteLine("Введите первое число");
-//int a = int.Parse(Console.ReadLine());
-//Console.WriteLine("Введите второе число");
-//int b = int.Parse(Console.ReadLine());
-//int ost = a%b;
-//if (ost == 0) Console.WriteLine("кратно");
-//else Console.WriteLine("не кратно, Остаток "+ost);
-
-//Console.WriteLine("Введите первое число");
-//int a = int.Parse(Console.ReadLine());
-//if (a % 7==0 && a%23==0) Console.WriteLine("Кратно 7 и 23");
-//else Console.WriteLine("не Кратно 7 и 23");
+Console.WriteLine("Введите число");
+int a = int.Parse(Console.ReadLine());
+if (a<100) Console.WriteLine("третьей цифры нет"); 
+else 
+{
+    int namber3 = (a%1000-a%100)/100;
+    Console.WriteLine(namber3);
+}
